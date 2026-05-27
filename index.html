@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
 
-        <picture>
-            <img src="" alt="Logo do Portal de notícias">
+        <picture id="logo" aria-label="Logo do Portal de notícias">
+            <img src="img/logo.png" alt="Logo do Portal de notícias">
         </picture>
 
         <nav>
-            <menu>
-                <a href="#">Home</a>
-                <a href="#">Noticias importantes</a>
-                <a href="#">Contato</a>
-            </menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
 
-        <div aria-label="Espaço de pesquisa">
-            <label for="search">Buscar</label>
-            <input type="search" id="seacrh">
-        </div>
+        <form id="search-container" aria-label="Espaço de pesquisa">
+            <label for="search">Buscar:</label>
+            <input type="search" id="search">
+        </form>
     </header>
 
 </body>
