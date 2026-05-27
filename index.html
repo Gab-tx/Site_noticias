@@ -9,26 +9,93 @@
 </head>
 
 <body>
-
+    <!-- Cabeçalho -->
     <header>
-
+        <!-- Logo -->
         <picture id="logo" aria-label="Logo do Portal de notícias">
             <img src="img/logo.png" alt="Logo do Portal de notícias">
         </picture>
-
+        <!-- Navbar -->
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-
+        <!-- Form de pesquisa -->
         <form id="search-container" aria-label="Espaço de pesquisa">
             <label for="search">Buscar:</label>
             <input type="search" id="search">
         </form>
     </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <h1>Noticias Importantes</h1>
+            <div id="home-container">
+                <article class="noticias-cards">
+                    <img src="img/politica.jpg" alt="">
+                    <h2>Noticia importante 1</h2>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </article>
+                <article class="noticias-cards">
+                    <img src="img/economia.avif" alt="">
+                    <h2>Noticia importante 2</h2>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </article>
+                <article class="noticias-cards">
+                    <img src="img/lula.avif" alt="">
+                    <h2>Noticia importante 3</h2>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Noticias -->
+        <section id="noticias">
+            <h2>Notícias</h1>
+
+                <article id="primeira-noticia" class="artigo-noticia">
+                    <h2>Primeira notícia</h3>
+                        <p>Lorem ipsum dolor sit
+                            amet consectetur adipisicing
+                            elit. Debitis error iusto,
+                            quaerat quam nostrum, dolorem expedita
+                            tempora distinctio incidunt beatae
+                            minima quidemiure. Aliquid voluptatum veniam
+                            nam ea ratione debitis!</p>
+                </article>
+
+                <article id="segunda-noticia" class="artigo-noticia">
+                    <h2>Segunda notícia</h2>
+                    <p>Lorem ipsum dolor sit
+                        amet consectetur adipisicing
+                        elit. Debitis error iusto,
+                        quaerat quam nostrum, dolorem expedita
+                        tempora distinctio incidunt beatae
+                        minima quidemiure. Aliquid voluptatum veniam
+                        nam ea ratione debitis!</p>
+                </article>
+
+                <article id="terceira-noticia" class="artigo-noticia">
+                    <h2>Terceira notícia</h2>
+                    <p>Lorem ipsum dolor sit
+                        amet consectetur adipisicing
+                        elit. Debitis error iusto,
+                        quaerat quam nostrum, dolorem expedita
+                        tempora distinctio incidunt beatae
+                        minima quidemiure. Aliquid voluptatum veniam
+                        nam ea ratione debitis!</p>
+                </article>
+
+        </section>
+
+        <aside>
+
+        </aside>
+    </main>
 
 </body>
 
