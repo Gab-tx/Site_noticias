@@ -1,14 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
+:root{
+    --primary-color: #EDEDED;
+    --secondary-color: #C4170C;
+    --header-color: #333;
+    --text-color: white;
+
+    --title-font: "DM Serif Display", serif;
+    --desc-font: 'Roboto', sans-serif;
+
+    --title-size: 24px;
+    --desc-size: 16px;
+    --text-between: 1.5px
+}
+
+p{
+    font-family: var(--desc-font);
+    font-size: var(--desc-font);
+}
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--title-font);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     line-height: 1.5;
 }
 
@@ -22,8 +41,8 @@ header {
 
     gap: 20px;
 
-    background-color: #333;
-    color: white;
+    background-color: var(--header-color);
+    color: var(--text-color);
 
     padding: 20px 40px;
 }
@@ -42,13 +61,13 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 
     padding: 10px 16px;
     border-radius: 8px;
-
-    font-size: 15px;
+    font-family: var(--desc-font);
+    font-size: var(--desc-size);
     font-weight: 500;
 
     transition: 0.3s ease;
@@ -87,7 +106,7 @@ nav a:hover {
 }
 
 #home h1 {
-    font-size: 2rem;
+    font-size: var(--title-size);
     text-align: center;
 
     margin-bottom: 30px;
@@ -135,13 +154,13 @@ nav a:hover {
 .noticias-cards h2 {
     padding: 16px 16px 8px;
 
-    color: #c4170c;
+    color: var(--secondary-color);
 }
 
 .noticias-cards p {
     padding: 0 16px 20px;
 
-    color: #555;
+    color: var(--header-color);
 }
 
 /* ÁREA DAS NOTÍCIAS */
@@ -169,7 +188,7 @@ section:last-of-type {
 }
 
 #titulo-noticias {
-    font-size: 2rem;
+    font-size: var(--title-size);
 
     margin-bottom: 20px;
 }
@@ -214,15 +233,17 @@ section:last-of-type {
 }
 
 .artigo-noticia h2 {
-    font-size: 1.8rem;
+    font-size: var(--title-size);
 
     margin-bottom: 12px;
 
-    color: #c4170c;
+    color: var(--header-color);
 }
 
 .artigo-noticia p {
-    color: #444;
+    font-family: var(--desc-font);
+    font-size: var(--desc-size);
+    color: var(--header-color);
 }
 
 /* ASIDE */
@@ -245,7 +266,7 @@ aside {
 aside h3 {
     margin-bottom: 20px;
 
-    color: #c4170c;
+    color: var(--secondary-color);
 }
 
 aside ul {
@@ -263,19 +284,19 @@ aside li {
 aside a {
     text-decoration: none;
 
-    color: #222;
+    color: var(--header-color);
 
     font-weight: bold;
 }
 
 aside a:hover {
-    color: #c4170c;
+    color: var(--secondary-color);
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #222;
+    background-color: var(--header-color);
     color: white;
 
     margin-top: 40px;
@@ -304,7 +325,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #c4170c;
+    color: var(--secondary-color);
 }
 
 /* RESPONSIVIDADE */
