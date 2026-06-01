@@ -170,6 +170,18 @@ main {
 
 }
 
+#mensagem-container {
+    display: flex;
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10px;
+}
+#mensagem {
+    font-family: var(--desc-font);
+    font-size: 18px
+}
+
 /* FOOTER */
 
 footer {
