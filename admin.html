@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
 </head>
 
 <body>
@@ -17,20 +18,68 @@
         <!-- Navbar -->
         <nav id="navbar">
             <ul>
-                <li><a aria-label="Home" href="index.html">Cria Noticia</a></li>
-                <li><a aria-label="Noticias" href="index.html#noticias">Todas as noticias</a></li>
-                <li><a aria-label="Login" href="login.html">Voltar</a></li>
+                <li><a aria-label="Home" href="#">Cria Noticia</a></li>
+                <li><a aria-label="Noticias" href="#">Todas as noticias</a></li>
             </ul>
 
             <div aria-label="Container do botão de saída" id="logout-container">
                 <button id="logout">
-                    <img src="img/logout" alt="Ícone de saída">
+                    <img src="img/logout.png" alt="Ícone de saída">
                 </button>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Cadastar Notícias -->
+        <h1>Cadastrar Notícia.</h1>
+        <section id="cadastro-container">
+            <form id="form-noticia">
+
+                <!-- Titulo -->
+                <div>
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" maxlength="100" required>
+                </div>
+                <!-- Subtitulo (opcional) -->
+                <div>
+                    <label for="subtitulo">Subtitulo</label>
+                    <input type="text" id="subtitulo" maxlength="200">
+                </div>
+                <!-- Categoria -->
+                <div>
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">Selecione</option>
+                        <option value="1">Política</option>
+                        <option value="2">Esportes</option>
+                        <option value="3">Tecnologia</option>
+                        <option value="4">Economia</option>
+                    </select>
+                </div>
+                <!-- Descrição -->
+                <div>
+                    <label for="descricao">Descrição Resumida</label>
+                    <textarea name="descricao" id="descricao" rows="4"></textarea>
+                </div>
+                <!-- Conteúdo -->
+                <div>
+                    <label for="conteudo">Conteúdo completo</label>
+                    <textarea name="conteudo" id="conteudo" rows="10" required></textarea>
+                </div>
+                <!-- URL da imagem -->
+                <div>
+                    <label for="imagem">URL da Imagem</label>
+                    <input type="url" id="imagem" placeholder="https://..." required>
+                    <button type="submit">Publicar Notícia</button>
+                </div>
+
+            </form>
+        </section>
+        <!-- Noticias Cadastradas -->
+        <section>
+
+        </section>
 
     </main>
 
