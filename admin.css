@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: var(--title-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #EDEDED;
+    --secondary-color: #C4170C;
+    --header-color: #333;
+    --text-color: white;
+
+    --title-font: "DM Serif Display", serif;
+    --desc-font: 'Roboto', sans-serif;
+
+    --title-size: 24px;
+    --desc-size: 16px;
+    --text-between: 1.5px
+}
+
+/* HEADER */
+
+body {
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    gap: 20px;
+
+    background-color: var(--header-color);
+    color: var(--text-color);
+
+    padding: 20px 40px;
+}
+
+#logo img {
+    width: 100px;
+    display: block;
+}
+
+/* NAV */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text-color);
+
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: var(--desc-font);
+    font-size: var(--desc-size);
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Main */
+
