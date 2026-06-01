@@ -23,7 +23,7 @@
 
 /* HEADER */
 
-body{
+body {
     background-color: var(--primary-color);
 }
 
@@ -98,7 +98,7 @@ nav a:hover {
 
 /* FORM */
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +117,7 @@ main{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 #login-form h1 {
     text-align: center;
     font-family: var(--title-font);
@@ -124,7 +125,7 @@ main{
     font-size: var(--title-size);
 }
 
-#login-form label{
+#login-form label {
     font-family: var(--desc-font);
     font-size: var(--desc-size);
     color: var(--header-color);
@@ -133,7 +134,7 @@ main{
     margin-top: 15px;
 }
 
-#login-form input{
+#login-form input {
     width: 100%;
     padding: 12px;
     outline: none;
