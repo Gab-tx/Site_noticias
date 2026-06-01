@@ -11,6 +11,7 @@ form.addEventListener("submit", (event) => {
     const admemail = "admin@gmail.com"
 
     if (email === admemail && senha === admsenha) {
+        localStorage.setItem("logado", "true")
         window.location.href = "admin.html";
     } else {
         mensagem.textContent = "Email ou senha inválidos.";
