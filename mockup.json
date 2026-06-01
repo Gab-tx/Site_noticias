@@ -1,0 +1,86 @@
+{
+  "admin": [
+    {
+      "idAdmin": 1,
+      "nome": "Administrador",
+      "email": "admin@email.com",
+      "senha_hash": "123456"
+    }
+  ],
+
+  "categoria": [
+    {
+      "idCategoria": 1,
+      "nome": "Política"
+    },
+    {
+      "idCategoria": 2,
+      "nome": "Esportes"
+    },
+    {
+      "idCategoria": 3,
+      "nome": "Tecnologia"
+    },
+    {
+      "idCategoria": 4,
+      "nome": "Economia"
+    }
+  ],
+
+  "noticia": [
+    {
+      "idNoticia": 1001,
+      "titulo": "Governo anuncia novo pacote econômico",
+      "subtitulo": "Medidas devem impactar inflação nos próximos meses",
+      "descricao": "O governo federal anunciou novas medidas econômicas para conter a inflação e estimular o crescimento.",
+      "conteudo": "O pacote inclui redução de impostos em setores estratégicos, incentivo ao consumo interno e investimentos em infraestrutura...",
+      "data_publicacao": "2026-01-10",
+      "data_atualizacao": "2026-01-11",
+      "idAdmin": 1,
+      "idCategoria": 1
+    },
+    {
+      "idNoticia": 1002,
+      "titulo": "Final do campeonato será neste domingo",
+      "subtitulo": "Times se enfrentam em jogo decisivo",
+      "descricao": "A grande final do campeonato nacional promete fortes emoções entre os dois melhores times da temporada.",
+      "conteudo": "O estádio estará lotado e a expectativa é de um jogo equilibrado do início ao fim...",
+      "data_publicacao": "2026-01-08",
+      "data_atualizacao": "2026-01-08",
+      "idAdmin": 1,
+      "idCategoria": 2
+    },
+    {
+      "idNoticia": 1003,
+      "titulo": "Nova tecnologia promete revolucionar IA",
+      "subtitulo": "Avanço pode reduzir custos de processamento",
+      "descricao": "Pesquisadores desenvolveram uma nova arquitetura de inteligência artificial mais eficiente.",
+      "conteudo": "A nova abordagem reduz significativamente o consumo de energia e aumenta a velocidade de processamento...",
+      "data_publicacao": "2026-01-05",
+      "data_atualizacao": "2026-01-06",
+      "idAdmin": 1,
+      "idCategoria": 3
+    }
+  ],
+
+  "imagem": [
+    {
+      "idImagem": 501,
+      "descricao": "Imagem política governo",
+      "url": "https://picsum.photos/800/500?random=1",
+      "idNoticia": 1001
+    },
+    {
+      "idImagem": 502,
+      "descricao": "Imagem futebol final",
+      "url": "https://picsum.photos/800/500?random=2",
+      "idNoticia": 1002
+    },
+    {
+      "idImagem": 503,
+      "descricao": "Imagem tecnologia IA",
+      "url": "https://picsum.photos/800/500?random=3",
+      "idNoticia": 1003
+    }
+  ]
+}
