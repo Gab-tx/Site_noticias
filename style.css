@@ -14,6 +14,9 @@
     --text-between: 1.5px
 }
 
+a{
+    text-decoration: none;
+}
 p{
     font-family: var(--desc-font);
     font-size: var(--desc-font);
@@ -62,7 +65,6 @@ nav ul {
 
 nav a {
     color: var(--text-color);
-    text-decoration: none;
 
     padding: 10px 16px;
     border-radius: 8px;
@@ -296,8 +298,11 @@ aside a:hover {
 /* FOOTER */
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--header-color);
     color: white;
+    justify-content: center;
 
     margin-top: 40px;
 
@@ -305,9 +310,9 @@ footer {
 }
 
 footer div {
-    max-width: 1200px;
+    display: flex;
+    margin: auto;
 
-    margin: 0 auto;
 }
 
 footer ul {

@@ -35,21 +35,31 @@
         <section id="home">
             <h1>Noticias Importantes</h1>
             <div id="home-container">
-                <article class="noticias-cards">
-                    <img src="img/politica.jpg" alt="">
-                    <h2>Noticia importante 1</h2>
-                    <p>Lorem ipsum dolor sit amet </p>
-                </article>
-                <article class="noticias-cards">
-                    <img src="img/economia.avif" alt="">
-                    <h2>Noticia importante 2</h2>
-                    <p>Lorem ipsum dolor sit amet </p>
-                </article>
-                <article class="noticias-cards">
-                    <img src="img/lula.avif" alt="">
-                    <h2>Noticia importante 3</h2>
-                    <p>Lorem ipsum dolor sit amet </p>
-                </article>
+
+                <a aria-label="Noticia em destaque:" href="#">
+                    <article class="noticias-cards">
+                        <img src="img/politica.jpg" alt="">
+                        <h2>Noticia importante 1</h2>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </article>
+                </a>
+
+
+                <a aria-label="Noticia em destaque:" href="#">
+                    <article class="noticias-cards">
+                        <img src="img/economia.avif" alt="">
+                        <h2>Noticia importante 2</h2>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </article>
+                </a>
+
+                <a aria-label="Noticia em destaque:" href="#">
+                    <article class="noticias-cards">
+                        <img src="img/lula.avif" alt="">
+                        <h2>Noticia importante 3</h2>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </article>
+                </a>
             </div>
         </section>
 
@@ -58,63 +68,70 @@
             <div id="noticias">
                 <h2 id="titulo-noticias">Notícias</h2>
 
-                <article id="primeira-noticia" class="artigo-noticia">
-                    <picture>
-                        <img src="img/faria-lima.avif" alt="Politicos em entrevista">
-                    </picture>
+                <a aria-label="Noticia: " href="#">
+                    <article id="primeira-noticia" class="artigo-noticia">
+                        <picture>
+                            <img src="img/faria-lima.avif" alt="Politicos em entrevista">
+                        </picture>
 
-                    <div>
-                        <h2>Mercado financeiro reage após nova projeção de crescimento econômico</h2>
+                        <div>
+                            <h2>Mercado financeiro reage após nova projeção de crescimento econômico</h2>
+                            <p>
+                                Investidores acompanham com otimismo os novos indicadores divulgados nesta manhã.
+                                Analistas apontam recuperação gradual do setor financeiro e maior movimentação
+                                na região da Faria Lima, principal centro econômico do país.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+                <a aria-label="Noticia: " href="#">
+                    <article id="segunda-noticia" class="artigo-noticia">
+                        <picture>
+                            <img src="img/mercado.avif" alt="Mercado e carrinho de compras">
+                        </picture>
 
-                        <p>
-                            Investidores acompanham com otimismo os novos indicadores divulgados nesta manhã.
-                            Analistas apontam recuperação gradual do setor financeiro e maior movimentação
-                            na região da Faria Lima, principal centro econômico do país.
-                        </p>
-                    </div>
-                </article>
+                        <div>
+                            <h2>Bolsa fecha em alta impulsionada por empresas de tecnologia</h2>
 
-                <article id="segunda-noticia" class="artigo-noticia">
-                    <picture>
-                        <img src="img/mercado.avif" alt="Mercado e carrinho de compras">
-                    </picture>
+                            <p>
+                                Ações do setor tecnológico lideraram os ganhos do dia e ajudaram o índice brasileiro
+                                a encerrar em alta. Especialistas destacam aumento no interesse por inovação e
+                                transformação digital no mercado nacional.
+                            </p>
+                        </div>
+                    </article>
+                </a>
 
-                    <div>
-                        <h2>Bolsa fecha em alta impulsionada por empresas de tecnologia</h2>
+                <a aria-label="Noticia: " href="#">
+                    <article id="terceira-noticia" class="artigo-noticia">
+                        <picture>
+                            <img src="img/fintech.avif" alt="Dinheiro e dolar espalhado pelo chão">
+                        </picture>
 
-                        <p>
-                            Ações do setor tecnológico lideraram os ganhos do dia e ajudaram o índice brasileiro
-                            a encerrar em alta. Especialistas destacam aumento no interesse por inovação e
-                            transformação digital no mercado nacional.
-                        </p>
-                    </div>
-                </article>
+                        <div>
+                            <h2>Fintech brasileira amplia serviços e atrai novos investidores</h2>
 
-                <article id="terceira-noticia" class="artigo-noticia">
-                    <picture>
-                        <img src="img/fintech.avif" alt="Dinheiro e dolar espalhado pelo chão">
-                    </picture>
-
-                    <div>
-                        <h2>Fintech brasileira amplia serviços e atrai novos investidores</h2>
-
-                        <p>
-                            Startup do setor financeiro anunciou expansão de operações e novos recursos digitais
-                            voltados para pagamentos e crédito. O crescimento das fintechs continua movimentando
-                            o cenário econômico brasileiro.
-                        </p>
-                    </div>
-                </article>
+                            <p>
+                                Startup do setor financeiro anunciou expansão de operações e novos recursos digitais
+                                voltados para pagamentos e crédito. O crescimento das fintechs continua movimentando
+                                o cenário econômico brasileiro.
+                            </p>
+                        </div>
+                    </article>
+                </a>
 
             </div>
             <aside>
                 <h3>Mais lidas</h3>
 
                 <ul>
-                    <li><a href="#">Mercado financeiro sobe 2%</a></li>
-                    <li><a href="#">Nova fintech cresce no Brasil</a></li>
-                    <li><a href="#">Tecnologia muda setor bancário</a></li>
-                    <li><a href="#">Inflação desacelera em maio</a></li>
+                    <li><a aria-label="Noticia: Mercado financeiro sobe 2%" href="#">Mercado financeiro sobe 2%</a></li>
+                    <li><a aria-label="Noticia: Nova fintech cresce no Brasil" href="#">Nova fintech cresce no
+                            Brasil</a></li>
+                    <li><a aria-label="Noticia: Tecnologia muda setor bancário" href="#">Tecnologia muda setor
+                            bancário</a></li>
+                    <li><a aria-label="Noticia: Inflação desacelera em maio" href="#">Inflação desacelera em maio</a>
+                    </li>
                 </ul>
             </aside>
         </section>
@@ -128,8 +145,8 @@
         </div>
         <div>
             <ul>
-                <li><a href=""></a>contato</li>
-                <li><a href=""></a>trabalhe conosco</li>
+                <li><a aria-label="Contato" href="#">Contato</a></li>
+                <li><a aria-label="Trabalhe Conosco" href="#">Trabalhe Conosco</a></li>
             </ul>
         </div>
     </footer>
