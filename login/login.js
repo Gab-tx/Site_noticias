@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
 
     if (email === admemail && senha === admsenha) {
         localStorage.setItem("logado", "true")
-        window.location.href = "admin.html";
+        window.location.href = "/admin/admin.html";
     } else {
         mensagem.textContent = "Email ou senha inválidos.";
     }
