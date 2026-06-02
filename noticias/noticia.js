@@ -10,9 +10,10 @@ async function carregarNoticia() {
 
      if (!noticia) {
           document.getElementById("noticia").innerHTML = `
-          <div>
+          <div id="not-found">
                <h1>Notícia não encontrada</h1>
-               <p>A notícia solicitada não existe.</p>
+               <p>A notícia solicitada não existe ou foi apagada.</p>
+               <img src="/img/not.png" alt="Um X indicando negação"></img>
           </div>`;
           return;
      }
