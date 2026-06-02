@@ -33,7 +33,7 @@ function renderNoticias() {
         card.classList.add("noticia-card");
 
         card.innerHTML = `
-        <img src="${imagem ? imagem.url : ''}"/>
+        <img src="${imagem ? imagem.url : ''}" alt="${noticia.titulo}"/>
         <div aria-label="corpo do conteúdo" class="content">
             <h3>${noticia.titulo}</h3>
             <p>${noticia.descricao}</p>

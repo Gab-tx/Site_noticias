@@ -179,7 +179,7 @@ main h1 {
 }
 
 #form-noticia button:hover {
-    background-color: #a31109;
+    background-color: var(--secondary-color);
 
     transform: translateY(2px);
 }
@@ -252,12 +252,12 @@ main h1 {
 }
 
 .edit {
-    background: #f0ad4e;
+    background: var(--header-color);
     color: white;
 }
 
 .delete {
-    background: #d9534f;
+    background: var(--secondary-color);
     color: white;
 }
 
