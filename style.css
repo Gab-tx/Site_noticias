@@ -41,6 +41,9 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 
     gap: 20px;
 
@@ -258,7 +261,8 @@ aside {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     position: sticky;
-    top: 20px;
+    top: 130px;
+    margin-top: 54px;
 }
 
 aside h3 {
