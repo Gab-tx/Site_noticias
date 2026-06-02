@@ -26,6 +26,8 @@ async function carregarNoticia() {
                <div id="titulo-container">
                     <h1 id="titulo">${noticia.titulo}</h1>
                     <p id="descricao">${noticia.descricao}</p>
+
+                    <p id="data" >Atualizado em ${new Date(noticia.data_atualizacao).toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}</p>
                </div>
 
                <div id="imagem-container">

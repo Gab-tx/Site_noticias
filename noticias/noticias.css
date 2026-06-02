@@ -224,10 +224,15 @@ section {
 
 }
 
-#titulo-container p {
-     font-size: var(--desc-size);
+#descricao {
+     font-size: var(--desc-size-2);
      color: var(--header-color);
 
+}
+
+#data {
+     font-size: 16px;
+     color: #3333339a;
 }
 
 #imagem-container {
