@@ -7,11 +7,14 @@
     --header-color: #333;
     --text-color: white;
 
+
     --title-font: "DM Serif Display", serif;
     --desc-font: 'Roboto', sans-serif;
 
     --title-size: 24px;
+    --title-size-2: 42px;
     --desc-size: 16px;
+    --desc-size-2: 20px;
     --text-between: 1.5px
 }
 
@@ -267,11 +270,12 @@ section {
 #imagem-container {
      display: flex;
      justify-content: center;
+     width: 100%;;
 }
 
 #imagem {
      width: 100%;
-     max-width: 650px;
+     max-width: 100%;
      height: auto;
      border-radius: 10px;
 }
