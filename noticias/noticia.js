@@ -21,9 +21,15 @@ async function carregarNoticia() {
 
      document.getElementById("noticia").innerHTML = `
           <section>
-               <h1 id="titulo">${noticia.titulo}</h1>
-               <p id="descricao">${noticia.descricao}</p>
-               <img src="${imagem?.url}" alt="${imagem?.descricao || noticia.titulo}" id="imagem">
+               <div id="titulo-container">
+                    <h1 id="titulo">${noticia.titulo}</h1>
+                    <p id="descricao">${noticia.descricao}</p>
+               </div>
+
+               <div id="imagem-container">
+                    <img src="${imagem?.url}" alt="${imagem?.descricao || noticia.titulo}" id="imagem">
+               </div>
+
                <article id="conteudo">
                     ${noticia.conteudo}
                </article>
