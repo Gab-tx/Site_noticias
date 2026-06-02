@@ -33,7 +33,7 @@ p {
 }
 
 body {
-     background-color: var(--primary-color);
+     
      color: var(--secondary-color);
      line-height: 1.5;
 }
@@ -243,6 +243,10 @@ section {
 }
 
 article {
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
      text-align: start;
      color: var(--header-color);
      font-family: var(--desc-font);

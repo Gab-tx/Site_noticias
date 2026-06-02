@@ -19,6 +19,8 @@ async function carregarNoticia() {
 
      const imagem = dados.imagem.find(img => img.idNoticia === id);
 
+     const texto = noticia.conteudo.split(".").filter(Boolean).map(paragrafo => `<p>${paragrafo.trim()}.</p>`).join("");
+
      document.getElementById("noticia").innerHTML = `
           <section>
                <div id="titulo-container">
@@ -31,7 +33,7 @@ async function carregarNoticia() {
                </div>
 
                <article id="conteudo">
-                    ${noticia.conteudo}
+                    ${texto}
                </article>
           </section>`;
 };
