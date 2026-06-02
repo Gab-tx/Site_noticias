@@ -15,7 +15,7 @@
     },
     {
       "idCategoria": 2,
-      "nome": "Esportes"
+      "nome": "Economia"
     },
     {
       "idCategoria": 3,
@@ -23,63 +23,66 @@
     },
     {
       "idCategoria": 4,
-      "nome": "Economia"
+      "nome": "Esportes"
     }
   ],
 
   "noticia": [
     {
       "idNoticia": 1001,
-      "titulo": "Governo anuncia novo pacote econômico",
-      "subtitulo": "Medidas devem impactar inflação nos próximos meses",
-      "descricao": "O governo federal anunciou novas medidas econômicas para conter a inflação e estimular o crescimento.",
-      "conteudo": "O pacote inclui redução de impostos em setores estratégicos, incentivo ao consumo interno e investimentos em infraestrutura...",
+      "titulo": "Mercado financeiro reage após nova projeção de crescimento econômico",
+      "slug": "mercado-financeiro-reage-crescimento",
+      "subtitulo": "Investidores acompanham otimismo nos indicadores econômicos",
+      "descricao": "Investidores acompanham com otimismo os novos indicadores divulgados nesta manhã.",
+      "conteudo": "Analistas apontam uma recuperação gradual do setor financeiro, impulsionada principalmente pela melhora na confiança do mercado e pela estabilização de indicadores macroeconômicos nos últimos meses. Esse movimento indica uma retomada consistente, ainda que moderada, após períodos de volatilidade e incertezas.Na região da Faria Lima, principal centro financeiro do país, já é possível observar um aumento significativo na movimentação de investidores, fundos e instituições financeiras. O fluxo de negociações voltou a crescer, refletindo maior apetite por risco e expectativa de oportunidades em setores estratégicos da economia.Especialistas destacam que essa retomada está diretamente ligada a ajustes na política econômica, à queda gradual da inflação e à perspectiva de redução de juros no médio prazo. Ainda assim, alertam que o cenário exige cautela, já que fatores externos, como o desempenho da economia global, podem influenciar o ritmo dessa recuperação.",
       "data_publicacao": "2026-01-10",
       "data_atualizacao": "2026-01-11",
-      "idAdmin": 1,
-      "idCategoria": 1
-    },
-    {
-      "idNoticia": 1002,
-      "titulo": "Final do campeonato será neste domingo",
-      "subtitulo": "Times se enfrentam em jogo decisivo",
-      "descricao": "A grande final do campeonato nacional promete fortes emoções entre os dois melhores times da temporada.",
-      "conteudo": "O estádio estará lotado e a expectativa é de um jogo equilibrado do início ao fim...",
-      "data_publicacao": "2026-01-08",
-      "data_atualizacao": "2026-01-08",
       "idAdmin": 1,
       "idCategoria": 2
     },
     {
+      "idNoticia": 1002,
+      "titulo": "Bolsa fecha em alta impulsionada por empresas de tecnologia",
+      "slug": "bolsa-fecha-alta-tecnologia",
+      "subtitulo": "Setor tecnológico lidera ganhos do dia",
+      "descricao": "Ações do setor tecnológico lideraram os ganhos do dia e ajudaram o índice brasileiro a encerrar em alta.",
+      "conteudo": "Especialistas destacam aumento no interesse por inovação e transformação digital no mercado nacional.",
+      "data_publicacao": "2026-01-08",
+      "data_atualizacao": "2026-01-08",
+      "idAdmin": 1,
+      "idCategoria": 3
+    },
+    {
       "idNoticia": 1003,
-      "titulo": "Nova tecnologia promete revolucionar IA",
-      "subtitulo": "Avanço pode reduzir custos de processamento",
-      "descricao": "Pesquisadores desenvolveram uma nova arquitetura de inteligência artificial mais eficiente.",
-      "conteudo": "A nova abordagem reduz significativamente o consumo de energia e aumenta a velocidade de processamento...",
+      "titulo": "Fintech brasileira amplia serviços e atrai novos investidores",
+      "slug": "fintech-brasileira-expande-servicos",
+      "subtitulo": "Crescimento das fintechs movimenta o mercado financeiro",
+      "descricao": "Startup do setor financeiro anunciou expansão de operações e novos recursos digitais.",
+      "conteudo": "O crescimento das fintechs continua movimentando o cenário econômico brasileiro com novas soluções de pagamento e crédito.",
       "data_publicacao": "2026-01-05",
       "data_atualizacao": "2026-01-06",
       "idAdmin": 1,
-      "idCategoria": 3
+      "idCategoria": 2
     }
   ],
 
   "imagem": [
     {
       "idImagem": 501,
-      "descricao": "Imagem política governo",
-      "url": "https://picsum.photos/800/500?random=1",
+      "descricao": "Faria Lima e mercado financeiro",
+      "url": "/img/faria-lima.avif",
       "idNoticia": 1001
     },
     {
       "idImagem": 502,
-      "descricao": "Imagem futebol final",
-      "url": "https://picsum.photos/800/500?random=2",
+      "descricao": "Bolsa e tecnologia",
+      "url": "/img/mercado.avif",
       "idNoticia": 1002
     },
     {
       "idImagem": 503,
-      "descricao": "Imagem tecnologia IA",
-      "url": "https://picsum.photos/800/500?random=3",
+      "descricao": "Fintech crescimento",
+      "url": "/img/fintech.avif",
       "idNoticia": 1003
     }
   ]
