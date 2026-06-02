@@ -88,10 +88,6 @@ nav a:hover {
     gap: 10px;
 }
 
-#search-container label {
-    font-weight: bold;
-}
-
 #search {
     padding: 10px 14px;
 
