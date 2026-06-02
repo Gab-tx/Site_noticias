@@ -3,6 +3,7 @@
 :root{
     --primary-color: #EDEDED;
     --secondary-color: #C4170C;
+    --secondary-color-hover: #af0c00;
     --header-color: #333;
     --text-color: white;
 
@@ -56,6 +57,7 @@ header {
 #logo img {
     width: 100px;
     display: block;
+    margin-left: 100px;
 }
 
 /* NAV */
@@ -89,6 +91,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 116px;
 }
 
 #search {
@@ -98,6 +101,33 @@ nav a:hover {
     outline: none;
 
     border-radius: 10px;
+}
+
+#search-container label {
+    color: var(--header-color);
+    position: relative;
+    left: 70px;
+    font-family: var(--desc-font);
+    font-weight: bold;
+}
+
+#search-container button {
+    font-family: var(--desc-font);
+    font-weight: bold;
+    padding: 8px 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#search-container button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color-hover);
+}
+#search-container button:active {
+    transform:scale(.98);
 }
 
 /* HOME */

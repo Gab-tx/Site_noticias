@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap');
 
-* {
-    font-family: var(--title-font);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
+:root{
     --primary-color: #EDEDED;
     --secondary-color: #C4170C;
+    --secondary-color-hover: #af0c00;
     --header-color: #333;
     --text-color: white;
 
@@ -21,21 +15,36 @@
     --text-between: 1.5px
 }
 
-/* HEADER */
+a{
+    text-decoration: none;
+}
+p{
+    font-family: var(--desc-font);
+    font-size: var(--desc-font);
+}
+* {
+    font-family: var(--title-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 1.5;
 }
 
-a {
-    text-decoration: none;
-}
+/* HEADER */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 
     gap: 20px;
 
@@ -48,6 +57,7 @@ header {
 #logo img {
     width: 100px;
     display: block;
+    margin-left: 100px;
 }
 
 /* NAV */
@@ -81,10 +91,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-#search-container label {
-    font-weight: lighter
+    margin-right: 116px;
 }
 
 #search {
@@ -94,6 +101,33 @@ nav a:hover {
     outline: none;
 
     border-radius: 10px;
+}
+
+#search-container label {
+    color: var(--header-color);
+    position: relative;
+    left: 70px;
+    font-family: var(--desc-font);
+    font-weight: bold;
+}
+
+#search-container button {
+    font-family: var(--desc-font);
+    font-weight: bold;
+    padding: 8px 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#search-container button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color-hover);
+}
+#search-container button:active {
+    transform:scale(.98);
 }
 
 /* FORM */
