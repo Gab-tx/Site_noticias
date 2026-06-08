@@ -10,8 +10,9 @@ class NoticiaService:
 
             session.add(obj_noticia)
             session.commit()
+            session.refresh(obj_noticia)
             
-            return "Notícia cadastrada com sucesso!"
+            return obj_noticia
         
     @classmethod
     def select_all(cls):
