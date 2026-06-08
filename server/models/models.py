@@ -45,6 +45,7 @@ class Noticia(Base):
     conteudo: Mapped[str] = mapped_column(Text(), nullable=False)
     data_publicacao: Mapped[datetime] = mapped_column(DateTime(), default=datetime.now)
     data_atualizacao: Mapped[datetime] = mapped_column(DateTime(), nullable=True, default=datetime.now, onupdate=datetime.now)
+    ativo: Mapped[bool] = mapped_column(Boolean(), default=True)
     idAdmin: Mapped[int] = mapped_column(Integer(), ForeignKey("Admins.id"))
     idCategoria: Mapped[int] = mapped_column(Integer(), ForeignKey("Categorias.id"))
 
