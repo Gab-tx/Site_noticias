@@ -1,13 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = ""
+DATABASE_URL = "sqlite:///banco.db"
 
 engine = create_engine(
     DATABASE_URL,
-    connect_args={
-        "sslmode": "require"
-    },
     echo=True
     
 )
