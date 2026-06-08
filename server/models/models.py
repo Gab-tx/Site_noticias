@@ -55,7 +55,7 @@ class Noticia(Base):
     categoria: Mapped["Categoria"] = relationship(
         back_populates="noticias"
     )
-    imagem: Mapped[list["Imagem"]] = relationship(
+    imagens: Mapped[list["Imagem"]] = relationship(
         back_populates="noticia",
         cascade="all, delete-orphan"
     )
