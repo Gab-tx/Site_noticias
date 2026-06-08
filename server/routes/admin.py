@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from ..service.admin import AdminService
+from service.admin import AdminService
 
 admin_bp = Blueprint(
     "admins",
@@ -7,7 +7,7 @@ admin_bp = Blueprint(
     url_prefix="/admin"
 )
 
-@admin_bp.get("/email/<str:email>")
+@admin_bp.get("/email/<string:email>")
 def select_by_email(email):
     
     admin = AdminService.select_by_email(email)

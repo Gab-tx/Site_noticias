@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from ..service.imagem import ImagemService
+from service.imagem import ImagemService
 
 imagem_bp = Blueprint(
     "imagens",

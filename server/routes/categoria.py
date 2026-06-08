@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from ..service.categoria import CategoriaService
+from service.categoria import CategoriaService
 
 categoria_bp = Blueprint(
     "categorias",

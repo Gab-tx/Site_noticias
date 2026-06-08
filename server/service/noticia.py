@@ -1,5 +1,5 @@
-from ..models.models import Noticia
-from ..connection import SessionLocal
+from models.models import Noticia
+from connection import SessionLocal
 
 class NoticiaService:
     

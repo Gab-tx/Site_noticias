@@ -1,7 +1,7 @@
 from sqlalchemy import select
 
-from ..connection import SessionLocal
-from ..models.models import Admin
+from connection import SessionLocal
+from models.models import Admin
 
 class AdminService:
     
