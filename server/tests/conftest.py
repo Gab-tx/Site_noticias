@@ -2,8 +2,8 @@ import pytest
 import tempfile
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from ..app import app
-from ..models.models import Base
+from app import app
+from models.models import Base
 
 @pytest.fixture
 def client():
