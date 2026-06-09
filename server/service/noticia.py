@@ -18,6 +18,11 @@ class NoticiaService:
     def select_all(cls):
         with SessionLocal() as session:
             return session.query(Noticia).filter(Noticia.ativo == True).all()
+
+    @classmethod
+    def select_all_inactive(cls):
+        with SessionLocal() as session:
+            return session.query(Noticia).filter(Noticia.ativo == False).all()
         
     @classmethod
     def select_by_id(cls, id:int):
