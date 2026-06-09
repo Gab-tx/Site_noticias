@@ -1,264 +1,279 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
-    font-family: var(--desc-font);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: var(--desc-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-color: #EDEDED;
-    --secondary-color: #C4170C;
-    --header-color: #333;
-    --text-color: white;
+  --primary-color: #ededed;
+  --secondary-color: #c4170c;
+  --header-color: #333;
+  --text-color: white;
 
-    --title-font: "DM Serif Display", serif;
-    --desc-font: 'Roboto', sans-serif;
+  --title-font: "DM Serif Display", serif;
+  --desc-font: "Roboto", sans-serif;
 
-    --title-size: 24px;
-    --desc-size: 16px;
-    --text-between: 1.5px
+  --title-size: 24px;
+  --desc-size: 16px;
+  --text-between: 1.5px;
 }
 
 /* HEADER */
 
 body {
-    background-color: var(--primary-color);
-    color: var(--header-color);
-    line-height: 1.5;
+  background-color: var(--primary-color);
+  color: var(--header-color);
+  line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 
-    gap: 20px;
+  gap: 20px;
 
-    background-color: var(--header-color);
-    color: var(--text-color);
+  background-color: var(--header-color);
+  color: var(--text-color);
 
-    padding: 20px 40px;
+  padding: 20px 40px;
 }
 
 #logo img {
-    width: 100px;
-    display: block;
+  width: 100px;
+  display: block;
 }
 
 /* NAV */
-#navbar{
-    display: flex;
+#navbar {
+  display: flex;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 nav a {
-    color: var(--text-color);
+  color: var(--text-color);
 
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-family: var(--desc-font);
-    font-size: var(--desc-size);
-    font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: var(--desc-font);
+  font-size: var(--desc-size);
+  font-weight: 500;
 
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-    transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
 }
 
 #logout {
-    background-color: transparent;
-    border: none;
-    padding: 5px 8px;
-    border-radius: 10px;
-    margin-left: 30px;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 10px;
+  margin-left: 30px;
+  cursor: pointer;
 }
-#logout:hover{
-    background-color: rgba(255, 255, 255, 0.12);
-    transform: translateY(-2px);
+#logout:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
 }
 
 /* Main */
 
 main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 main h1 {
-    text-align: center;
-    font-family: var(--title-font);
-    font-size: var(--title-size);
-    color: var(--secondary-color);
-    margin-bottom: 30px;
-
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
 #cadastro-container {
-    background-color: var(--primary-color);
-    padding: 35px;
-    border-radius: 12px;
+  background-color: var(--primary-color);
+  padding: 35px;
+  border-radius: 12px;
 
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.18);
 }
 
 #form-noticia {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 #form-noticia label {
-    font-family: var(--desc-font);
-    font-size: 14px;
-    font-weight: 600;
+  font-family: var(--desc-font);
+  font-size: 14px;
+  font-weight: 600;
 
-    color: var(--header-color);
+  color: var(--header-color);
 
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 #form-noticia input,
 #form-noticia select,
 #form-noticia textarea {
-    padding: 12px 14px;
-    width: 100%;
+  padding: 12px 14px;
+  width: 100%;
 
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 
-    font-family: var(--desc-font);
-    font-size: var(--desc-size);
+  font-family: var(--desc-font);
+  font-size: var(--desc-size);
 
-    outline: none;
+  outline: none;
 
-    transition: 0.25s ease;
+  transition: 0.25s ease;
 
-    background: #fff;
+  background: #fff;
 }
 
 #form-noticia textarea {
-    resize: vertical;
-    min-height: 120px;
+  resize: vertical;
+  min-height: 120px;
 }
 
 #form-noticia button {
-    align-self: center;
+  align-self: center;
 
-    padding: 14px 28px;
+  padding: 14px 28px;
 
-    border: none;
-    border-radius: 8px;
+  border: none;
+  border-radius: 8px;
 
-    background-color: var(--secondary-color);
-    color: white;
+  background-color: var(--secondary-color);
+  color: white;
 
-    font-family: var(--desc-font);
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
+  font-family: var(--desc-font);
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: .3s;
+  transition: 0.3s;
 }
 
 #form-noticia button:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 
-    transform: translateY(2px);
+  transform: translateY(2px);
 }
 
 /* Noticias admin */
 #noticias-admin {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 #noticias-admin h2 {
-    text-align: center;
-    font-family: var(--title-font);
-    font-size: var(--title-size);
-    margin-bottom: 20px;
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  margin-bottom: 20px;
 }
 
 #lista-noticias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+#lista-noticias-inativa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.container-noticias-inativas > * {
+    transition: .4s;
+    opacity: 50%;
+}
+.container-noticias-inativas:hover > * {
+    opacity: 1;
 }
 
 .noticia-card {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-}
-.noticia-card:hover {
-    transform: translateY(-5px);
-}
-
-.noticia-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-.noticia-card .content {
-    padding: 15px;
-}
-
-.noticia-card h3 {
-    font-size: var(--title-size);
-    color: var(--secondary-color);
-    margin-bottom: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 .noticia-card p {
-    font-family: var(--desc-font);
-    font-size: var(--desc-size);
-    margin-bottom: 10px;
+    height: 100px;
+}
+.noticia-card:hover {
+  transform: translateY(-5px);
+}
+
+.noticia-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.noticia-card .content {
+  padding: 15px;
+}
+
+.noticia-card h3 {
+  font-size: var(--title-size);
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.noticia-card p {
+  font-family: var(--desc-font);
+  font-size: var(--desc-size);
+  margin-bottom: 10px;
 }
 
 .actions {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .actions button {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .edit {
-    background: var(--header-color);
-    color: white;
+  background: var(--header-color);
+  color: white;
 }
 
 .delete {
-    background: var(--secondary-color);
-    color: white;
+  background: var(--secondary-color);
+  color: white;
 }
-
-
