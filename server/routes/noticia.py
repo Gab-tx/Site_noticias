@@ -28,6 +28,28 @@ def select_all():
         
     return jsonify(resultado), 200
 
+@noticia_bp.get("/inactive")
+def select_all_inactive():
+    noticias = NoticiaService.select_all_inactive()
+        
+    resultado = []
+        
+    for noticia in noticias:
+        resultado.append({
+            "id":noticia.id,
+            "titulo":noticia.titulo,
+            "subtitulo":noticia.subtitulo,
+            "descricao": noticia.descricao,
+            "conteudo": noticia.conteudo,
+            "data_publicacao": noticia.data_publicacao,
+            "data_atualizacao": noticia.data_atualizacao,
+            "idAdmin": noticia.idAdmin,
+            "idCategoria": noticia.idCategoria
+        })
+        
+    return jsonify(resultado), 200
+
+
 @noticia_bp.get("/<int:noticia_id>")
 def select_by_id(noticia_id):
         noticia = NoticiaService.select_by_id(noticia_id)
@@ -87,4 +109,15 @@ def delete(noticia_id):
         })
     return jsonify({
         "message": "Noticia removida"
+    })
+@noticia_bp.patch("/<int:noticia_id>")
+def unarchive(noticia_id):
+
+    noticia = NoticiaService.unarchive(noticia_id)
+    if not noticia:
+        return jsonify({
+            "erro": "noticia não encontrada"
+        })
+    return jsonify({
+        "message": "Noticia desarquivada"
     })
