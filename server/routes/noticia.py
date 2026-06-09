@@ -98,9 +98,22 @@ def update(noticia_id):
     return jsonify({
         "message": "Notícia atualizada"
     })
-    
+
 @noticia_bp.delete("/<int:noticia_id>")
 def delete(noticia_id):
+
+    noticia = NoticiaService.delete(noticia_id)
+    if not noticia:
+        return jsonify({
+                "erro": "noticia não encontrada"
+            })
+    return jsonify({
+            "message": "Noticia arquivada"
+        })
+
+    
+@noticia_bp.patch("/archive/<int:noticia_id>")
+def archive(noticia_id):
     
     noticia = NoticiaService.soft_delete(noticia_id)
     if not noticia:
@@ -108,9 +121,9 @@ def delete(noticia_id):
             "erro": "noticia não encontrada"
         })
     return jsonify({
-        "message": "Noticia removida"
+        "message": "Noticia arquivada"
     })
-@noticia_bp.patch("/<int:noticia_id>")
+@noticia_bp.patch("/unarchive/<int:noticia_id>")
 def unarchive(noticia_id):
 
     noticia = NoticiaService.unarchive(noticia_id)
