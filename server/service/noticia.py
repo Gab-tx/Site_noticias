@@ -62,6 +62,7 @@ class NoticiaService:
             
             return "Notícia deletada com sucesso"
         
+    @classmethod
     def soft_delete(cls, id:int):
         with SessionLocal() as session:
             
@@ -73,5 +74,19 @@ class NoticiaService:
             
             session.commit()
             
+            return noticia
+        
+    @classmethod
+    def unarchive(cls, id:int):
+        with SessionLocal() as session:
+
+            noticia = session.query(Noticia).filter(Noticia.id == id).first()
+            if not noticia:
+                raise ValueError("Noticia não encontrada")
+
+            noticia.ativo = True
+
+            session.commit()
+
             return noticia
             
